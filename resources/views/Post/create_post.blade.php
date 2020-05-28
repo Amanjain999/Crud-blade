@@ -11,19 +11,7 @@
                 <div class="card-content">
                     <form method="POST" action="{{ route('Post.store') }}">
                         @csrf
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right"></label>
-
-                            <div class="col-md-8">
-                                <input id="user_id" type="hidden" class="form-control @error('user_id') is-invalid @enderror" name="user_id" value="{{ Auth::user()->id }}" required autocomplete="user_id" autofocus>
-
-                                @error('user_id')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+                       
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Title') }}</label>
 
@@ -41,8 +29,8 @@
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Content') }}</label>
 
                             <div class="col-lg-8">
-                                <input type="text" id="content" type="textarea" class="form-control @error('content') is-invalid @enderror" name="content" value="{{ old('content') }}" required]
-                                rows='4' cols='5' autocomplete="content" autofocus  > </input>
+                                <textarea  id="content" type="textarea" class="form-control @error('content') is-invalid @enderror" name="content" value="{{ old('content') }}" required]
+                                rows='4' cols='5' autocomplete="content" autofocus  > </textarea>
 
                                 @error('Content')
                                     <span class="invalid-feedback" role="alert">

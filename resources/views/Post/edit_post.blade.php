@@ -27,7 +27,7 @@
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Content') }}</label>
 
                             <div class="col-md-8">
-                                <input id="body" type="textarea" class="form-control @error('content') is-invalid @enderror" name="content" value="{{$post->content}}" required
+                                <textarea id="body" type="textarea" class="form-control @error('content') is-invalid @enderror" name="content" value="{{$post->content}}" required
                                 rows='4' cols='5' autocomplete="body" autofocus  > </textarea>
 
                                 @error('content')
