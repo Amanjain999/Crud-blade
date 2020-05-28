@@ -7,12 +7,12 @@
 @endsection
 <div class="container-fluid">
     <div class="card-body">
-        <x-tagline/>
-                    @if (session('status'))
+        <x-tagline />
+                    <!-- @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
-                    @endif
+                    @endif -->
                         <a href="{{url('Post/create')}}" class="btn btn-success">Add Blogs</a>
                          <div class="card-header">{{__('Show Blogs')}}</div>
                           <table class="table table-striped">
