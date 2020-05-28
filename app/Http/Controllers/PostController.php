@@ -5,6 +5,7 @@ use App\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Auth;
+use App\User;
 use App\Http\Requests\PostRequest;
 class PostController extends Controller
 {
@@ -16,6 +17,7 @@ class PostController extends Controller
     public function index()
     {
         $post=Post::all();
+        
         return view('Post.dashboard',(['Posts'=>$post]));
     }
 
