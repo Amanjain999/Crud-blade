@@ -12,7 +12,7 @@
                     <form method="POST" action="{{ route('Post.store') }}">
                         @csrf
                        
-                        <div class="form-group row">
+                        <div class="form-group row mt-4 ">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Title') }}</label>
 
                             <div class="col-md-8">
