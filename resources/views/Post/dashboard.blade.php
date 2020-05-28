@@ -7,6 +7,7 @@
 @endsection
 <div class="container-fluid">
     <div class="card-body">
+        <x-tagline/>
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -23,7 +24,7 @@
                              <th>Slug</th>
                              <th>Edit Blog</th>
                              <th>Delete Blog</th>
-                             <th> Blog</th>
+                             <th>View Blog</th>
 
                          </tr>
                      </thead>
